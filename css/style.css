@@ -6,7 +6,7 @@
 }
 
 html{
-    height: 170vh;
+    height: 160vh;
     background-color: #FFF;
     background-repeat: no-repeat;
     background-size: contain;
@@ -261,10 +261,9 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: static;
     bottom: 0;
     left: 0;
-    align-self: end;
+    position: static;
 }
 
 .menu_footer{
@@ -273,6 +272,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 15px;
+  
 }
 
 .menu_footer img{
