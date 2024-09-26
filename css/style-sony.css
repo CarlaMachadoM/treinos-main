@@ -38,7 +38,7 @@ header.rolagem a, header.rolagem i{
 }
 
 header.rolagem a:hover{
-    color: #0202ce;
+    color: #28c7ef;
 }
 
 header i{
@@ -57,7 +57,7 @@ header ul li{
 }
 
 header ul li a{
-    color: rgb(2, 2, 145);
+    color: rgb(4, 4, 209);
     text-decoration: none;
     font-family: monospace;
     font-size: 30px;
@@ -66,7 +66,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    color: #2828ef;
+    color: #28c7ef;
     font-family: monospace;
     font-size: 30px;
     font-weight: bold;
