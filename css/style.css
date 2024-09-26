@@ -308,6 +308,11 @@ footer {
 
     .banner h1 {
         font-size: 2.5em;
+        color: rgb(83, 166, 255);  
+    }
+
+    .banner h1 span{
+        color: rgb(177, 0, 177);
     }
 
     .container2 {
