@@ -264,7 +264,7 @@ footer{
     position: static;
     bottom: 0;
     left: 0;
-    align-self: ;
+    align-self: end;
 }
 
 .menu_footer{
