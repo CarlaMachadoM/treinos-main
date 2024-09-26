@@ -7,7 +7,7 @@
 
 html{
     height: 170vh;
-    background-color: #ffffff;
+    background-color: #FFF;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -23,6 +23,7 @@ html{
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    height: 370px;
 }
 
 .flex{
@@ -34,7 +35,7 @@ html{
 header {
     width: 100%;
     padding: 20px 4%;
-    position: fixed; /* Mantém o header fixo durante o scroll */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000; /* Define um z-index alto para garantir que o header fique acima dos cards */
@@ -127,6 +128,7 @@ header ul li a:hover{
     display: flex;
     justify-content: center; 
     gap: 20px; 
+    height: 400px;
     flex-wrap: nowrap; 
     padding: 10px; 
 }
@@ -250,7 +252,7 @@ header ul li a:hover{
     transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
 
-footer {
+footer{
     background-color: rgb(83, 166, 255);
     width: 100%;
     height: 50px;
@@ -259,22 +261,23 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-    bottom: 0; 
-    left: 0; 
+    position: static;
+    bottom: 0;
+    left: 0;
+    align-self: ;
 }
 
-.menu_footer {
+.menu_footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     height: 15px;
 }
 
-.menu_footer img {
+.menu_footer img{
     width: 50px;
-    height: 40px; 
-    margin-top: -10px; 
+    height: 40px;
 }
 
 /* mobile */

@@ -6,8 +6,10 @@
 }
 
 html{
-    height: 200vh;
+    height: 170vh;
     background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .container{
@@ -87,15 +89,17 @@ header ul li a:hover{
 }
 
 .banner-nintendo{
-    height: 100vh;
-    background-position: 100% 0;
+    height: 100vh; /* Ajustado de 100hv para 100vh */
+    background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(https://www.hardware.com.br/wp-content/uploads/static/wp/2022/07/07/H2x1_NintendoLogo_Red.png);
+    background-image: url('https://wallpapercave.com/wp/wp7622270.jpg');
 
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%; /* Garante que o banner ocupe toda a largura */
+    overflow: hidden; /* Impede que a imagem transborde */
 }
 
 .banner-nintendo h1{
@@ -126,7 +130,7 @@ header ul li a:hover{
 
 .consoles article{
     width: 30%;
-    height: 370px;
+    height: 390px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,4 +185,193 @@ header ul li a:hover{
 .textos-console p{
     margin-top: 20px;
     font-size: 17px;
+}
+
+footer {
+    background-color: red;
+
+    width: 100%;
+    height: 50px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    bottom: 0; 
+    left: 0; 
+}
+
+.menu_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+}
+
+.menu_footer img {
+    width: 50px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    html {
+        height: auto; 
+    }
+
+    .container {
+        width: 100%; 
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 2%; 
+    }
+
+    header ul li {
+        margin: 0 10px;
+    }
+
+    header ul li a {
+        font-size: 20px; 
+    }
+
+    .btn-contato button {
+        width: 100px; 
+        height: 35px; 
+    }
+
+    .banner-nintendo h1 {
+        font-size: 2.5em;
+        color: rgb(83, 166, 255);  
+    }
+
+    .banner-nintendo h1 span{
+        color: rgb(177, 0, 177);
+    }
+
+    .container2 {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: center;
+    }
+
+    .consoles {
+        width: 90%; 
+        height: auto; 
+        padding: 15px; 
+        margin: 0; 
+    }
+
+    .card img {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .card h2 {
+        font-size: 1em; 
+    }
+
+    .card p {
+        font-size: 0.8em; 
+    }
+
+    .card-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        height: auto; 
+        padding: 10px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu_footer {
+        height: auto;
+        flex-direction: row;
+        padding: 5px 0;
+    }
+
+    .menu_footer img {
+        margin: 5px 0;
+    }
+
+    .banner-nintendo{
+    height: 50hv;
+    }
+
+    .consoles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin-top: 20px;
+    }
+
+    .consoles article{
+        width: 90%;
+        height: 370px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 1px solid rgb(253, 128, 128);
+        border-radius: 10px 10px 0px 0px;
+
+        margin-top: 20px;
+
+    }
+    .consoles article img{
+        width: 100%;
+        height: 180px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .consoles article button{
+        width: 30%;
+        margin: auto;
+        height: 25px;
+        
+        cursor: pointer;
+    
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        
+        border-radius: 5px;
+        border: 1.5px solid rgb(253, 128, 128);
+        transition: 1s;
+    }
+    .consoles article button:hover{
+        box-shadow: 0px 0px 20px rgb(255, 79, 79);
+    }
+    
+    .textos-console{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        margin-top: 10px;
+    }
+    
+    .textos-console h2{
+        border-bottom: 1px solid grey;
+    }
+    
+    .textos-console h4{
+        font-size: 12px;
+        color: rgb(151, 151, 151);
+        margin-top: 10px
+    }
+    
+    .textos-console p{
+        margin-top: 10px;
+        font-size: 17px;
+    }
 }
