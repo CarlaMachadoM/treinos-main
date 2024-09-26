@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 170vh;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed; /* Mantém o header fixo durante o scroll */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Define um z-index alto para garantir que o header fique acima dos cards */
+    transition: .5s;
+}
+
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: rgb(83, 166, 255);
+}
+
+header i{
+    font-size: 30px;
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #ee00ff;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 1s
+}
+
+header ul li a:hover{
+    color: rgb(83, 166, 255);
+    transition: 1s;
+}
+
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color:  rgb(177, 0, 177);;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.btn-contato button:hover{
+    background-color: rgb(83, 166, 255);
+    transition: 1s;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url('https://backiee.com/static/wallpapers/1000x563/361709.jpg');
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-body{
+    width: 80%;
+    margin: auto;
+}
+
+.banner h1{
+    font-size: 6em;
+    color: rgb(177, 0, 177);
+    font-family: monospace;
+
+}
+
+.banner h1 span{
+    color: rgb(83, 166, 255);
+    font-family: monospace;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: nowrap; 
+    padding: 10px; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 350px; 
+    padding: 20px;
+    margin: 0; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 130px; 
+    height: 130px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0; 
+    position: relative;
+    z-index: 1;
+    font-family: monospace;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #000000;
+    margin: 0; 
+    position: relative;
+    z-index: 1;
+    font-family: monospace;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.xbox {
+    width: 130px; 
+    height: 130px; 
+    border-radius: 10px;
+}
+
+.nintendo {
+    width: 130px; 
+    height: 130px; 
+    border-radius: 10px;
+}
+
+.sony {
+    width: 130px;
+    height: 130px; 
+    border-radius: 10px;
+}
+
+.card img {
+    width: 320px;
+    height: 130px; 
+    border-radius: 10px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+/* Estilos para o SVG */
+.card-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card rect {
+    fill: none;
+    stroke: #000000; 
+    stroke-width: 2;
+    stroke-dasharray: 890, 0;
+    transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
+}
+
+/* Gradiente no hover para Microsoft */
+.card-xbox:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+    stroke: url(#gradient-xbox); 
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+
+/* Gradiente no hover para Nintendo */
+.card-nintendo:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+    stroke: url(#gradient-nintendo); 
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+
+/* Gradiente no hover para Sony */
+.card-sony:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+    stroke: url(#gradient-sony); 
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+
+footer {
+    background-color: rgb(83, 166, 255);
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    bottom: 0; 
+    left: 0; 
+}
+
+.menu_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15px;
+}
+
+.menu_footer img {
+    width: 20px;
+    height: 20px; 
+    margin: 0 5px; 
+}
+
+
+
+/* mobile */
+
+@media (max-width: 768px) {
+    html {
+        height: auto; 
+    }
+
+    .container {
+        width: 100%; 
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 2%; 
+    }
+
+    header ul li {
+        margin: 0 10px;
+    }
+
+    header ul li a {
+        font-size: 20px; 
+    }
+
+    .btn-contato button {
+        width: 100px; 
+        height: 35px; 
+    }
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .container2 {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; 
+        height: auto; 
+        padding: 15px; 
+        margin: 0; 
+    }
+
+    .card img {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .card h2 {
+        font-size: 1em; 
+    }
+
+    .card p {
+        font-size: 0.8em; 
+    }
+
+    .card-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        height: auto; 
+        padding: 10px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu_footer {
+        height: auto;
+        flex-direction: row;
+        padding: 5px 0;
+    }
+
+    .menu_footer img {
+        margin: 5px 0;
+    }
+
+}
+
+
+
